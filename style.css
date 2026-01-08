@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.wrapper {
+  perspective: 800px;
+}
+
+.door {
+  width: 220px;
+  height: 320px;
+  background: #fff;
+  border: 2px solid #222;
+  transform-origin: left center;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.door span {
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.door.open {
+  transform: rotateY(-75deg);
+}
